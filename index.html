@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Ice Cream Collector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🍦 Ice Cream Collector 🍦</h1>
+  <div class="subtitle">Collect <strong>15 ice creams</strong> in <strong>30 seconds</strong> to win!</div>
+
+  <div class="status-bar">
+    <span>⏱ <span id="timer">30</span>s</span>
+    <span>|</span>
+    <span>🍨 <span id="collected">0</span>/15</span>
+  </div>
+
+  <div class="canvas-wrap">
+    <canvas id="game"></canvas>
+  </div>
+  <div class="controls-hint">Arrow keys / WASD to move (or use the pad below on mobile)</div>
+
+  <div class="dpad">
+    <button class="pad-btn pad-up" type="button" data-dir="up">▲</button>
+    <button class="pad-btn pad-left" type="button" data-dir="left">◀</button>
+    <button class="pad-btn pad-right" type="button" data-dir="right">▶</button>
+
+    <button class="pad-btn pad-down" type="button" data-dir="down">▼</button>
+  </div>
+
+  <div id="message"></div>
+  <button id="restart-btn" type="button">Play Again</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
